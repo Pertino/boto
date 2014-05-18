@@ -184,7 +184,6 @@ class Config(ConfigParser.SafeConfigParser):
     def dump(self):
         s = StringIO.StringIO()
         self.write(s)
-        print s.getvalue()
 
     def dump_safe(self, fp=None):
         if not fp:
